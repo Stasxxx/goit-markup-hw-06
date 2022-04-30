@@ -399,40 +399,55 @@
                 </button>
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <form class="user-form">
-                    <div>
-                        <label for="user-name">Имя</label>
-                        <input 
-                        type="text"
-                        class="user-input" 
-                        id="user-name">
+                    <div class="form-field">
+                        <label for="user-name" class="user-title">Имя</label>
+                        <div class="input-wrap">
+                            <input 
+                            type="text"
+                            class="user-input" 
+                            id="user-name">
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-name"></use>
+                            </svg>
+                        </div>
                     </div>
-                    <div>
-                        <label for="user-tel">Телефон</label>
-                        <input 
-                        type="tel" 
-                        class="user-input" 
-                        id="user-tel">
+                    <div class="form-field">
+                        <label for="user-tel" class="user-title">Телефон</label>
+                        <div class="input-wrap">
+                            <input 
+                            type="tel" 
+                            class="user-input" 
+                            id="user-tel">
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-tel"></use>
+                            </svg>
+                        </div>
                     </div>
-                    <div>
-                        <label for="user-email">Почта</label>
-                        <input 
-                        type="email" 
-                        class="user-input" 
-                        id="user-email">
+                    <div class="form-field">
+                        <label for="user-email" class="user-title">Почта</label>
+                        <div class="input-wrap">
+                            <input 
+                            type="email" 
+                            class="user-input" 
+                            id="user-email">
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="form-feedback">
-                        <label for="user-feedback">Комментарий</label>
+                        <label for="user-feedback" class="user-title">Комментарий</label>
                         <textarea 
                         name="" 
                         id="user-feedback" 
                         class="user-feedback" 
                         placeholder="Введите текст"></textarea>
                     </div>
-                    <div>
-                        <input type="checkbox" class="user-mail" id="user-agreement">
+                    <div class="form-checkbox">
+                        <input type="checkbox" class="" id="user-agreement">
                         <label for="user-agreement" class="user-agreement">
                             Соглашаюсь с рассылкой и принимаю
-                            <a href="">Условия договора</a>
+                            <a href="" class="link-agreemant">Условия договора</a>
                         </label>
                     </div>
                      

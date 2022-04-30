@@ -777,6 +777,10 @@ margin-right: 10px;
   left: 50%;
   transform: translate(-50%,-50%);
   padding: 40px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close {
@@ -814,8 +818,17 @@ margin-right: 10px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  margin-bottom: 12px;
 }
 /* ----------Форма пользователя------------- */
+.form-field {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
 .user-input {
   width: 448px;
   height: 40px;
@@ -825,8 +838,9 @@ margin-right: 10px;
 }
 
 .form-feedback {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 .user-feedback {
   width: 448px;
   height: 120px;
@@ -836,10 +850,10 @@ margin-bottom: 20px;
 }
 
 .user-agreement {
-font-size: 14px;
-line-height: 1.71px;
-letter-spacing: 0.03em;
-color: var (--secondary-color);
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var (--secondary-color);
 }
 
 .submit {
@@ -861,4 +875,40 @@ color: var (--secondary-color);
   letter-spacing: 0.06em;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.user-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color);
+  margin-bottom: 4px;
+
+  
+}
+
+.user-feedback::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  
+  color: rgba(117, 117, 117, 0.5);
+  padding-top: 12px;
+  padding-left: 16px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form-checkbox {
+  margin-bottom: 30px;
+}
+
+.link-agreemant {
+   color: #2196F3;
 }
