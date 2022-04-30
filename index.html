@@ -403,10 +403,11 @@
                         <label for="user-name" class="user-title">Имя</label>
                         <div class="input-wrap">
                             <input 
+                            name="username"
                             type="text"
                             class="user-input" 
                             id="user-name">
-                            <svg class="form-icon" width="18" height="18">
+                            <svg class="form-icon" width="12" height="12">
                                 <use href="./images/symbol-defs.svg#icon-name"></use>
                             </svg>
                         </div>
@@ -415,10 +416,11 @@
                         <label for="user-tel" class="user-title">Телефон</label>
                         <div class="input-wrap">
                             <input 
+                            name="tel"
                             type="tel" 
                             class="user-input" 
                             id="user-tel">
-                            <svg class="form-icon" width="18" height="18">
+                            <svg class="form-icon" width="13" height="13">
                                 <use href="./images/symbol-defs.svg#icon-tel"></use>
                             </svg>
                         </div>
@@ -427,10 +429,11 @@
                         <label for="user-email" class="user-title">Почта</label>
                         <div class="input-wrap">
                             <input 
+                            name="email"
                             type="email" 
                             class="user-input" 
                             id="user-email">
-                            <svg class="form-icon" width="18" height="18">
+                            <svg class="form-icon" width="15" height="12">
                                 <use href="./images/symbol-defs.svg#icon-email"></use>
                             </svg>
                         </div>
@@ -438,15 +441,24 @@
                     <div class="form-feedback">
                         <label for="user-feedback" class="user-title">Комментарий</label>
                         <textarea 
-                        name="" 
+                        name="feedback" 
                         id="user-feedback" 
                         class="user-feedback" 
                         placeholder="Введите текст"></textarea>
                     </div>
                     <div class="form-checkbox">
-                        <input type="checkbox" class="" id="user-agreement">
+                        <input 
+                        name="agree"
+                        type="checkbox" 
+                        class="checkbox visually-hidden" 
+                        id="user-agreement">
                         <label for="user-agreement" class="user-agreement">
-                            Соглашаюсь с рассылкой и принимаю
+                            <span class="check-icon">
+                                <svg class="icon-checkbox" width="16" height="15">
+                                    <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю&nbsp
                             <a href="" class="link-agreemant">Условия договора</a>
                         </label>
                     </div>
